@@ -1,0 +1,114 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjltofr0m4nlw"]
+
+[ext_resource type="Texture2D" uid="uid://by8d1skal803x" path="res://assets/sprites/colored-transparent.png" id="1_wotrx"]
+[ext_resource type="PackedScene" uid="uid://jcolf65yy2u8" path="res://scenes/prefabs/player.tscn" id="2_usx4a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kpc3s"]
+texture = ExtResource("1_wotrx")
+separation = Vector2i(1, 1)
+18:0/0 = 0
+18:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:0/0/physics_layer_0/angular_velocity = 0.0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:0/0 = 0
+19:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:0/0/physics_layer_0/angular_velocity = 0.0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 3, -8, 3)
+19:1/0 = 0
+19:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:1/0/physics_layer_0/angular_velocity = 0.0
+18:1/0 = 0
+18:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:1/0/physics_layer_0/angular_velocity = 0.0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:2/0 = 0
+18:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:2/0/physics_layer_0/angular_velocity = 0.0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:2/0 = 0
+19:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:2/0/physics_layer_0/angular_velocity = 0.0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:2/0 = 0
+20:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:2/0/physics_layer_0/angular_velocity = 0.0
+20:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:1/0 = 0
+20:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:1/0/physics_layer_0/angular_velocity = 0.0
+20:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:0/0 = 0
+20:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:0/0/physics_layer_0/angular_velocity = 0.0
+20:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:3/0 = 0
+18:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:3/0/physics_layer_0/angular_velocity = 0.0
+19:3/0 = 0
+19:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:3/0/physics_layer_0/angular_velocity = 0.0
+20:3/0 = 0
+20:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:3/0/physics_layer_0/angular_velocity = 0.0
+21:3/0 = 0
+21:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:3/0/physics_layer_0/angular_velocity = 0.0
+21:4/0 = 0
+21:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:4/0/physics_layer_0/angular_velocity = 0.0
+20:4/0 = 0
+20:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:4/0/physics_layer_0/angular_velocity = 0.0
+19:4/0 = 0
+19:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:4/0/physics_layer_0/angular_velocity = 0.0
+18:4/0 = 0
+18:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:4/0/physics_layer_0/angular_velocity = 0.0
+21:6/0 = 0
+21:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:6/0/physics_layer_0/angular_velocity = 0.0
+21:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0.875, -8, 1)
+22:6/0 = 0
+22:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+22:6/0/physics_layer_0/angular_velocity = 0.0
+22:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0.875, -8, 1)
+23:6/0 = 0
+23:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+23:6/0/physics_layer_0/angular_velocity = 0.0
+23:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0.75, -8, 0.75)
+
+[sub_resource type="TileSet" id="TileSet_186hh"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_kpc3s")
+
+[sub_resource type="TileSet" id="TileSet_7iwiw"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_186hh")
+format = 2
+layer_0/tile_data = PackedInt32Array(65536, 1310720, 1, 131072, 1310720, 1, 196608, 1310720, 1, 262144, 1310720, 1, 327680, 1310720, 1, 393216, 1310720, 1, 458752, 1310720, 1, 524288, 1310720, 1, 589824, 1310720, 1, 655360, 1310720, 1, 720896, 1310720, 1, 786432, 1310720, 1, 851968, 1310720, 1, 917504, 1310720, 1, 983041, 1245184, 0, 983042, 1245184, 0, 983043, 1245184, 0, 983044, 1245184, 0, 983045, 1245184, 0, 983046, 1245184, 0, 983047, 1245184, 0, 983048, 1245184, 0, 983040, 1179648, 4, 1179658, 1245184, 0, 1179659, 1245184, 0, 1179660, 1245184, 0, 1179661, 1245184, 0, 1179662, 1245184, 0, 1179663, 1245184, 0, 1179664, 1245184, 0, 1179665, 1245184, 0, 1179666, 1245184, 0, 1179667, 1245184, 0, 1179668, 1245184, 0, 1179669, 1245184, 0, 1179670, 1245184, 0, 1179671, 1245184, 0, 1179672, 1245184, 0, 1179673, 1245184, 0, 1179674, 1245184, 0, 1179675, 1245184, 0, 1179676, 1245184, 0, 1179677, 1245184, 0, 1179678, 1245184, 0, 1179679, 1245184, 0, 1179680, 1245184, 0, 1179681, 1245184, 0, 1179682, 1245184, 0, 1179683, 1245184, 0, 1179684, 1245184, 0, 1179685, 1245184, 0, 1179686, 1245184, 0, 1179687, 1245184, 0, 1179688, 1245184, 0, 1179689, 1245184, 0, 1179690, 1245184, 0, 1179691, 1245184, 0, 1179692, 1245184, 0, 1179693, 1245184, 0, 1179694, 1245184, 0, 1179695, 1245184, 0, 1179696, 1245184, 0, 983049, 1310720, 0, 1048585, 1310720, 1, 1114121, 1310720, 1, 1179657, 1179648, 4, 1179697, 1245184, 4, 1114161, 1179648, 1, 1048625, 1179648, 1, 983089, 1179648, 0, 1, 1245184, 2, 2, 1245184, 2, 3, 1245184, 2, 4, 1245184, 2, 5, 1245184, 2, 6, 1245184, 2, 7, 1245184, 2, 8, 1245184, 2, 9, 1245184, 2, 10, 1245184, 2, 11, 1245184, 2, 12, 1245184, 2, 13, 1245184, 2, 14, 1245184, 2, 15, 1245184, 2, 16, 1245184, 2, 17, 1245184, 2, 18, 1245184, 2, 19, 1245184, 2, 20, 1245184, 2, 21, 1245184, 2, 22, 1245184, 2, 23, 1245184, 2, 24, 1245184, 2, 25, 1245184, 2, 26, 1245184, 2, 27, 1245184, 2, 28, 1245184, 2, 29, 1245184, 2, 30, 1245184, 2, 31, 1245184, 2, 32, 1245184, 2, 33, 1245184, 2, 34, 1245184, 2, 35, 1245184, 2, 36, 1245184, 2, 37, 1245184, 2, 38, 1245184, 2, 39, 1245184, 2, 40, 1245184, 2, 41, 1245184, 2, 42, 1245184, 2, 43, 1245184, 2, 44, 1245184, 2, 45, 1245184, 2, 46, 1245184, 2, 47, 1245184, 2, 48, 1245184, 2, 49, 1245184, 2, 50, 1245184, 2, 51, 1245184, 2, 524340, 1179648, 1, 589876, 1179648, 1, 655412, 1179648, 1, 720948, 1179648, 1, 786484, 1179648, 1, 852020, 1179648, 1, 917556, 1179648, 1, 983090, 1245184, 0, 983091, 1245184, 0, 983092, 1245184, 4, 851979, 1245184, 0, 851980, 1245184, 0, 851981, 1245184, 0, 851982, 1245184, 0, 786458, 1245184, 0, 786459, 1245184, 0, 786460, 1245184, 0, 983059, 1376256, 6, 983060, 1441792, 6, 983061, 1507328, 6, 851990, 1376256, 6, 851991, 1441792, 6, 851992, 1507328, 6, 917534, 1245184, 0, 917535, 1245184, 0, 917536, 1245184, 0, 917537, 1245184, 0, 917538, 1245184, 0, 917539, 1245184, 0, 917540, 1245184, 0, 786471, 1245184, 0, 786472, 1245184, 0, 786473, 1245184, 0, 786474, 1245184, 0, 655404, 1245184, 0, 655405, 1245184, 0, 655406, 1245184, 0, 655407, 1245184, 0, 655408, 1245184, 0, 983078, 1376256, 6, 983079, 1441792, 6, 983080, 1507328, 6, 983083, 1376256, 6, 983084, 1441792, 6, 983085, 1507328, 6, 0, 1179648, 3, 655376, 1245184, 0, 655377, 1245184, 0, 655378, 1245184, 0, 655379, 1245184, 0, 655380, 1245184, 0, 458805, 1245184, 0, 458806, 1245184, 0, 458807, 1245184, 0, 458808, 1245184, 0, 393273, 1179648, 1, 327737, 1179648, 1, 262201, 1179648, 1, 196665, 1179648, 1, 131129, 1179648, 1, 65593, 1179648, 1, 52, 1245184, 2, 53, 1245184, 2, 54, 1245184, 2, 55, 1245184, 2, 56, 1245184, 2, 57, 1245184, 3, 458809, 1245184, 4, 458804, 1179648, 0)
+
+[node name="Traps" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_7iwiw")
+format = 2
+
+[node name="SpawnPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(41, 218)
+
+[node name="Player" parent="." instance=ExtResource("2_usx4a")]
+position = Vector2(40, 216)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_right_margin = 0.1
+editor_draw_limits = true
+editor_draw_drag_margin = true
